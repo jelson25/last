@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    main{
+      background-color:  #e2e6ec;
+    }
+    nav{
+        background: #7394b8;
+        padding: 20px;
+        padding-left: 0px;
+        max-height: 50px;
+    }
+    nav ul{
+        padding: 0;
+        margin: 0;
+    }
+    nav li a{
+        text-decoration: none;
+        padding: 20px;
+        font-size: 20px;
+        color: rgb(222, 220, 231);
+        border-right: 1px solid white;
+    }
+    nav li{
+        list-style: none;
+        display: inline-block;
+    
+    }
+    nav li a:hover{
+        background-color: #325882;
+    }
+    section{
+      display: flex;
+      padding: 50px;
+      padding-top: 20px;
+      gap: 50px;
+      border-bottom: 1px solid blueviolet;
+    }
+    .hero{
+      width: 25%;
+      border-radius: 20px;
+      padding: 30px;
+      background-color: white;
+      box-shadow: 10px 10px 30px #064889;
+    }
+    .hero :hover{
+      transform: none;
+    }
+    section :hover{
+      transform: scale(1.05);
+    }
+    img{
+      width: 100%;
+      height: 350px;
+      border-radius: 10px;
+    }
+    audio{
+      width: 100%;
+      margin-top: 20px;
+    }
+    span{
+      color: rgb(120, 80, 160);
+      font-size: 50px;
+      margin-left: 60px;
+      font-weight: bolder;
+    }
+  </style>
+</head>
+<body>
+     <nav class="navbar">
+        <ul>
+            <li><a href="#mani">MANIPURI SONG</a></li>
+        </ul>
+    </nav>
+    <main>
+    <br><br>
+    <span id="mani">MANIPURI SONG</span>
+    <section>
+      <div class="hero">
+        <img src="Latcharage.png" >
+        <audio src="Latcharage__Official_MV_Released__Akash___Preity___Young_Artist_Crew__2022_@abhisektongbram(128k).mp3" controls></audio>
+      </div>
+      <div class="hero">
+        <img src="Laija.png" >
+        <audio src="Laija_-_Felix_Yumnam___Lyrics__(128k).mp3" controls></audio>
+      </div>
+      <div class="hero">
+        <img src="Apaiba.png" >
+        <audio src="./Audio/SHEI-HUUM_-_Apaiba_Leichil__Official_Lyrics_Video_(128k).mp3" controls></audio>
+      </div>
+    </section>
+</body>
+</html>
