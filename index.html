@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Music</title>
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color:rgb(243, 243, 243);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+  }
+  
+  .container {
+    background: rgb(184, 243, 209);
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    line-height: 2;
+    box-shadow: 0 20px 26px rgba(0, 0, 0, 0.1), 0 20px 23px rgba(0, 0, 0, 0.08);
+  }
+  
+  input, button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  }
+  
+  input:valid {
+    border-color: green;
+    background-color: #b5d4bc;
+  }
+  
+  input:invalid:focus,
+  input:invalid:focus:not(:placeholder-shown) {
+    border-color: red;
+    background-color: #c83c38;
+  }
+.forgot-password {
+  text-align: right;
+  margin-top: -10px;
+}
+
+.forgot-password a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: not-allowed;
+    opacity: 0.6;
+    pointer-events: none;
+  }
+  
+  form:valid button {
+    opacity: 1;
+    pointer-events: all;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  button[type="submit"]:hover {
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+  input::placeholder {
+    color: #aaa;
+  }
+  .links {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.links a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Sign In</h2>
+    <form action="jelson.html">
+      <input
+        type="text"
+        name="username"
+        placeholder="Username"
+        minlength="3"
+        required
+      />
+      <input
+        type="password"
+        name="password"
+        placeholder="Password must be 8 character"
+        minlength="8"
+        required
+      />
+      <div class="forgot-password">
+            <a href="forgot-password.html">Forgot Password?</a>
+      </div>
+
+      <button type="submit">Login</button>
+      <div class="links">
+        Don't have an account?<a href="register.html"> Create one</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
